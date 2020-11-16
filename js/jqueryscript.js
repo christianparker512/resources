@@ -67,6 +67,7 @@ $(function() {
     // fadein a lightbox fadein and fadeout
     // $('.lightbox').delay(500).fadeIn(1000);
 
+    // jquery selectors
     // $('li:even').css('background-color', "red");
     // $('h2, p:first, li:last').css('background-color', "yellow");
     // // $('.redbox').css('background-color', "yellow");
@@ -78,8 +79,26 @@ $(function() {
     // $('#list').children().css('background-color', "red");
     // $('#list').parents().css('background-color', "lightblue");
     // $('#list').parent().css('background-color', "pink");
-    $('#list').siblings().css('background-color', "orange");
-    $('#list').prev().css('background-color', "aliceblue");
-    $('#list').next().css('background-color', "green");
+    // $('#list').siblings().css('background-color', "orange");
+    // $('#list').prev().css('background-color', "aliceblue");
+    // $('#list').next().css('background-color', "green");
+
+    // jquery filter elements selected with some criteria
+    // $('#li').first().css("background-color", "yellow");
+
+    // Adding new Elements to the DOM
+    // append goes to the last of the ul
+    $('ul ul:first').append('<li>I am going to be the last item');
+    $('<li>I am going to be the first item</li>').appendTo($('ul ul:first'));
+
+    // prepend goes to the beginning of the ul
+    // $('ul ul:first').prepend('<li>I am going to be the first item');
+    // or
+    $("<li>I'm gonna the be the first item</li>").prependTo("ul ul:first");
+
+    $('<h4>Christian parker</h4>').prependTo('#content');
+    $('<h4>Christian parker</h4>').appendTo('#content');
+
+
 
 });
