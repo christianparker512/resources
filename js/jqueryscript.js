@@ -124,20 +124,42 @@ $(function() {
     // console.log(special.link.attr('href'));
 
     // video slideshow of what I've learned about animations in jquery'
-    var galleryImage = $('.gallery').find('img').first();
-    var images = [
-        "img/laptop-mobile_small.jpg",
-        "img/laptop-on-table_small.jpg",
-        "img/people-office-group-team_small.jpg",
-    ];
-    var i = 0;
-    setInterval(function() {
-        i = (i + 1) % images.length;
-        galleryImage.fadeOut(function(){
-            $(this).attr('src',images[i]);
-            $(this).fadeIn();
-            console.log(galleryImage.attr("src"));
-        })
-    },2000);
+    // var galleryImage = $('.gallery').find('img').first();
+    // var images = [
+    //     "img/laptop-mobile_small.jpg",
+    //     "img/laptop-on-table_small.jpg",
+    //     "img/people-office-group-team_small.jpg",
+    // ];
+    // var i = 0;
+    // setInterval(function() {
+    //     i = (i + 1) % images.length;
+    //     galleryImage.fadeOut(function(){
+    //         $(this).attr('src',images[i]);
+    //         $(this).fadeIn();
+    //         console.log(galleryImage.attr("src"));
+    //     })
+    // },2000);
 
+    // changing the css with jquery
+    // var  redBox = $('.red-box')
+    // console.log(redBox.css('width'));
+    // console.log(redBox.width());
+    //
+    // redBox.css('background-color', '#AA7700')
+
+    // adding classes-fancy link
+//     $('p').addClass('fancy-link');
+//     $('p:first').addClass('large emphasize');
+// });
+// removing classes
+// $('li li').addClass(function(inside){
+//     $(this.addClass('item-'+ item));
+//
+//     $('div').addClass(function(index, currentClass){
+//         if(currentClass === "dummy"){
+//             return 'red-box';
+//         }
+//     });
+//     $('.red-box').removeClass('red-box');
+    $('.red-box').removeClass('red-box').addClass('green-box');
 });
