@@ -65,6 +65,12 @@ $(function() {
     // });
 
     // fadein a lightbox fadein and fadeout
-    $('.lightbox').delay(500).fadeIn(1000);
+    // $('.lightbox').delay(500).fadeIn(1000);
+
+    $('li:even').css('background-color', "red");
+    $('h2, p:first, li:last').css('background-color', "yellow");
+    // $('.redbox').css('background-color', "yellow");
+    // $('li').css('background-color', "yellow");
+    // $("input[type='text']").css('background-color','red');
 
 });
