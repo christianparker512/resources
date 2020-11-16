@@ -14,9 +14,21 @@ $(function() {
     // // $(".red-box").fadeOut(fast);
     // $(".blue-box").fadeToggle();
     // $(".blue-box").fadeToggle();
-    $(".blue-box1").hide(1000);
-    $(".blue-box1").show(2000);
-    $(".blue-box2").slideUp(2000);
-    $(".blue-box2").slideDown(2000);
+
+    // Hide and show as well as hide and slidedown
+    // $(".blue-box1").hide(1000);
+    // $(".blue-box1").show(2000);
+    // $(".blue-box2").slideUp(2000);
+    // $(".blue-box2").slideDown(2000);
+    // $("p").hide();
+    // $("p").slideDown(5000);
+
+    // Jquery AnimationEffect
+    $('.blue-box2').animate({
+        "margin-left": "200px"},
+        1000);
+    $('.blue-box2').animate({
+            "margin-left": "0px"},
+        1000);
 
 });
