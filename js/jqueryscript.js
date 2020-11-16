@@ -67,10 +67,19 @@ $(function() {
     // fadein a lightbox fadein and fadeout
     // $('.lightbox').delay(500).fadeIn(1000);
 
-    $('li:even').css('background-color', "red");
-    $('h2, p:first, li:last').css('background-color', "yellow");
-    // $('.redbox').css('background-color', "yellow");
-    // $('li').css('background-color', "yellow");
-    // $("input[type='text']").css('background-color','red');
+    // $('li:even').css('background-color', "red");
+    // $('h2, p:first, li:last').css('background-color', "yellow");
+    // // $('.redbox').css('background-color', "yellow");
+    // // $('li').css('background-color', "yellow");
+    // // $("input[type='text']").css('background-color','red');
+
+    // traversal
+    // $('#list').find('li').css('background-color', "purple");
+    // $('#list').children().css('background-color', "red");
+    // $('#list').parents().css('background-color', "lightblue");
+    // $('#list').parent().css('background-color', "pink");
+    $('#list').siblings().css('background-color', "orange");
+    $('#list').prev().css('background-color', "aliceblue");
+    $('#list').next().css('background-color', "green");
 
 });
