@@ -88,17 +88,24 @@ $(function() {
 
     // Adding new Elements to the DOM
     // append goes to the last of the ul
-    $('ul ul:first').append('<li>I am going to be the last item');
-    $('<li>I am going to be the first item</li>').appendTo($('ul ul:first'));
+    // $('ul ul:first').append('<li>I am going to be the last item');
+    // $('<li>I am going to be the first item</li>').appendTo($('ul ul:first'));
 
     // prepend goes to the beginning of the ul
     // $('ul ul:first').prepend('<li>I am going to be the first item');
     // or
-    $("<li>I'm gonna the be the first item</li>").prependTo("ul ul:first");
+    // $("<li>I'm gonna the be the first item</li>").prependTo("ul ul:first");
+    //
+    // $('<h4>Christian parker</h4>').prependTo('#content');
+    // $('<h4>Christian parker</h4>').appendTo('#content');
 
-    $('<h4>Christian parker</h4>').prependTo('#content');
-    $('<h4>Christian parker</h4>').appendTo('#content');
+    // $('.red-box').after("<div class='red-box'>another red</div>");
+    // $('.blue-box2').after("<div class='blue-box2'>another blue friend</div>");
 
+    $('.blue-box2').before(function(){
+        return "<div class='blue-box2'>blue #3</div>";
+    })
+    $('.blue-box2').before($('.red-box'));
 
-
+    $('p').after($("#list"));
 });
