@@ -116,4 +116,28 @@ $(function() {
     // })
     // var firstListItem = $('li:first');
     // $('p:first').replaceWith(firstListItem);
+
+
+
+    // retrieve and set values - attr(), prop(), val()
+    // var specialLink = $('#special-link')
+    // console.log(special.link.attr('href'));
+
+    // video slideshow of what I've learned about animations in jquery'
+    var galleryImage = $('.gallery').find('img').first();
+    var images = [
+        "img/laptop-mobile_small.jpg",
+        "img/laptop-on-table_small.jpg",
+        "img/people-office-group-team_small.jpg",
+    ];
+    var i = 0;
+    setInterval(function() {
+        i = (i + 1) % images.length;
+        galleryImage.fadeOut(function(){
+            $(this).attr('src',images[i]);
+            $(this).fadeIn();
+            console.log(galleryImage.attr("src"));
+        })
+    },2000);
+
 });
