@@ -102,10 +102,18 @@ $(function() {
     // $('.red-box').after("<div class='red-box'>another red</div>");
     // $('.blue-box2').after("<div class='blue-box2'>another blue friend</div>");
 
-    $('.blue-box2').before(function(){
-        return "<div class='blue-box2'>blue #3</div>";
-    })
-    $('.blue-box2').before($('.red-box'));
+    // $('.blue-box2').before(function(){
+    //     return "<div class='blue-box2'>blue #3</div>";
+    // })
+    // $('.blue-box2').before($('.red-box'));
+    //
+    // $('p').after($("#list"));
 
-    $('p').after($("#list"));
+    // replace/remove elements from the DOM - using .replaceWith
+    // $('li').replaceWith('<li>Replaced.</li>');
+    // $('li').replaceWith(function(){
+    //   return "<li>Replaced with function.</li>"
+    // })
+    // var firstListItem = $('li:first');
+    // $('p:first').replaceWith(firstListItem);
 });
