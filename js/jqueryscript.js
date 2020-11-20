@@ -161,5 +161,22 @@ $(function() {
 //         }
 //     });
 //     $('.red-box').removeClass('red-box');
-    $('.red-box').removeClass('red-box').addClass('green-box');
+//     $('.red-box').removeClass('red-box').addClass('green-box');
+//
+//
+//
+//     Data
+//     var gallery = $('.gallery');
+//     var images = ["laptop-mobile_small.jpg",
+//              "laptop-on-table_small.jpg",
+//              "people-office-group-team_small.jpg",];
+//     gallery.data('availableImages', images);
+//     console.log(gallery.data('availableImages'));
+//     gallery.data
+
+    // text(), html()
+    var firstPar = $('p:first');
+    console.log(firstPar.text());
+    console.log(firstPar.html());
+    console.log($('p').html());
 });
