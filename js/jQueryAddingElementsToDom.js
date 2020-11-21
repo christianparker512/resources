@@ -8,6 +8,12 @@ $(function(){
     $("<li>Christian Parker</li>").prependTo($("ul ul:first"));
 
     $(".red-box").after("<div class='red-box'>Another Red Box</div>");
-    $(".blue-box").after("<div class='blue-box1'>Another blue friend</div>");
+    $(".blue-box1").after("<div class='blue-box1'>Another blue friend</div>");
+
+    $(".blue-box1").before(function(){
+            return "<div class='blue-box1'>Another blue friend</div>";
+    });
+    $(".blue-box1").before($(".red-box"));
+    $('p').after($("#list"))
 
 })
