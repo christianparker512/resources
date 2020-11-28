@@ -60,9 +60,37 @@ function handlePosts(){
     })
 }
 
+
+// **** Es6 Map helper
 var numbers=[1,2,3];
 var doubledNumbers = [];
-for (var i=0; i,numbers.length; i++){
-    doubledNumbers.push(numbers[i] *2);
-}
+// for (var i=0; i,numbers.length; i++){
+//     doubledNumbers.push(numbers[i] *2);
+// }
+
+var doubled = numbers.map(function(map){
+    return number *2;
+});
+doubled;
 doubledNumbers;
+
+// **** Map.helper is used whenever you want to modify records.
+var cars = [
+    { model: 'buick', price: 'cheap'},
+    {model: 'Camaro', price: 'expensive'}
+
+];
+var prices = cars.map(function(car){
+    return car.price;
+});
+
+// Where is Map. helper used?
+
+// Plucking values
+var images = [
+    {height: '34px', width: '39px'},
+    {height: '54px', width: '19px'},
+    {height: '76px', width: '42px'},
+    {height: '83px', width: '75px'},
+];
+var heights;
