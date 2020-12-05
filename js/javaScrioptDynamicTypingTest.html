@@ -5,12 +5,26 @@
     <title>javaScrioptDynamicTypingTest</title>
 </head>
 <body>
-<div class = "messsage"></div>
+<div class = "message"></div>
 <textarea name = "words" cols = "75" rows ="5" disabled></textarea>
+<button type="button">Start</button>
 <script>
     const wording = ["Do you like JavaScript as much as I do?", "Hope you are having fun this is a simple game you can make", "Source code is included so you can create your own version of this challenge." ];
     const message = document.querySelector(".message");
     const playText = document.querySelector("textarea");
+    const button = document.querySelector("button");
+    button.addEventListener("click", function(){
+        console.log(this.innerText);
+        if(this.innerText=="Start"){
+            playText.disabled = false;
+            playGame();
+        }
+    })
+    function playGame(){
+        let randomNum = Math.floor(Math.random()*wording.length);
+        message.innerText = wording[randomNum];
+        console.log(randomNum);
+    }
 </script>
 </body>
 </html>
