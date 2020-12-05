@@ -35,6 +35,10 @@
         let wordCount = wordCounter(str);
         let speed = Math.round((wordCount/totalTime)*60);
         let finalMessage = "You typed at "+ speed+ "words per minute.";
+        if (str == message.innerText){
+            finalMessage += "<br>There were some errors in the wording";
+        }
+        message.innerHTML = finalMessage;
 
         //count words
         //divide by total time words/per minute
