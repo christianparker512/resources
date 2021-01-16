@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mock Interview Problems</title>
+</head>
+<body>
+
+<script>
+
+    //1. Understand the Problem
+
+    //EX: Write a function which takes in a string and returns counts of each character in the string.
+
+    /*
+        restate: take a string, count the characters, return the count
+        inputs: string, could be sentence,  alphanumeric characters (str)
+        outputs: object with char as key and count as value, (charCount)
+
+
+    */
+
+
+
+    //2. Explore Concrete Examples
+
+    //EX: Write a function which takes in a string and returns counts of each alphanumeric character in the string.
+
+    /*
+        simple: countChars("aaaa") => {a : 4}
+
+        complex: countChars("hello hey!") =>
+
+    */
+
+
+
+    //3. Break it Down
+
+    //EX: Write a function which takes in a string and returns counts of each alphanumeric character in the string.
+
+    /*
+
+	*/
+
+    // function countChars(str) {
+    // 	// make bucket obj
+    //     //loop through string to get chars
+    //     //check if char is alphanumeric
+    //     // if it is, add to obj
+    //     //return obj
+    // }
+
+
+
+    //4. Solve || Simplify
+
+    //EX: Write a function which takes in a string and returns counts of each alphanumeric character in the string.
+
+    function countChars(str) {
+        // make bucket obj
+        let charCount = {};
+        //loop through string to get chars
+        for (let char of str) {
+            //check if char is alphanumeric
+            // if it is, add to obj
+            //lowercase each char
+            char = char.toLowerCase();
+
+            //add char to obj
+            if (!charCount[char]) {
+                charCount[char] = 1;
+            } else {
+                charCount[char]++;
+            }
+        }
+
+        //return obj
+        return charCount;
+    }
+
+    console.log(countChars("hello!"));
+
+
+    //5. Look Back and Refactor
+
+    //EX: Write a function which takes in a string and returns counts of each alphanumeric character in the string.
+
+
+
+
+</script>
+</body>
+</html>
