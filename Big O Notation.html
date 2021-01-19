@@ -10,6 +10,17 @@
     function addUpTo(n){
         return n * (n +1)/2;
     }
+    console.log(addUpTo(4));
+    // this is the same as 4 * (4+1)/2 = 4 * 5 /2 = 10
+    function addUpTo2(n){
+        let total = 0;
+        for(let i = 1; i<=n; i++){
+            total +=i;
+        }
+        return total;
+    }
+    console.log(addUpTo2(5));
+    // this is the same as 1 + 2 +3 + 4+ 5 = 15
 </script>
 </body>
 </html>
